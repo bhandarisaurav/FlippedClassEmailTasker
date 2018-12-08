@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flipped Class Mail Tasker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!--===============================================================================================-->
+
+</head>
+<body>
+
+
+<div class="container-contact100">
+    <div class="contact100-map" id="google_map" data-map-x="27.711969099999997" data-map-y="85.34244799999999" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+    <button class="contact100-btn-show">
+        <i class="fa fa-envelope-o" aria-hidden="false"></i>
+    </button>
+
+    <div class="wrap-contact100">
+        <button class="contact100-btn-hide">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </button>
+
+        <form class="contact100-form validate-form" method="post" action="sendEmail.php">
+				<span class="contact100-form-title">
+					Flipped Class Mail Tasker
+				</span>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Teacher's Name is required">
+                <span class="label-input100">Teacher's Name</span>
+                <input class="input100" type="text" name="name" placeholder="Enter teacher's name">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Teacher's Email</span>
+                <input class="input100" type="text" name="email" placeholder="Enter Teacher's email addess">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Video's Title is required">
+                <span class="label-input100">Video's Title</span>
+                <input class="input100" type="text" name="title" placeholder="Enter Video's Title">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Sheet's Url is Required">
+                <span class="label-input100">Google Sheet's Link</span>
+                <input class="input100" type="url" name="url" placeholder="Enter the google sheet's URL">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 col-md-3 validate-input" data-validate = "Class is Required">
+                <span class="label-input100">Class</span>
+                <!--<input class="input100" type="number" name="class" placeholder="Enter Class"  min="1" max="12">-->
+                <select class="input100" name="class">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="wrap-input100 col-md-3 validate-input" data-validate = "Class is Required">
+                <span class="label-input100">Gender</span>
+                <select class="input100" name="gender">
+                    <option value="Sir">Male</option>
+                    <option value="Ma'am">Female</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="col-md-1"></div>
+
+
+            <div class="wrap-input100 col-md-4 validate-input" data-validate = "Editor's Name is Required">
+                <span class="label-input100">Your Name</span>
+                <input class="input100" type="text" name="editor_name" placeholder="Enter your Name">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn" name="submit">
+						<span>
+							Send Email
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+                </button>
+            </div>
+        </form>
+
+        <span class="contact100-more">
+				Developed By <b><a style="color: #010810;" href="http://facebook.com/sauravbh1">Saurav Bhandari</a></b>: <span class="contact100-more-highlight"> +977-9843500114</span>
+			</span>
+    </div>
+</div>
+
+
+
+<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+<script src="assets/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/bootstrap/js/popper.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/daterangepicker/moment.min.js"></script>
+<script src="assets/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="assets/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+<script src="assets/js/map-custom.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/main.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
